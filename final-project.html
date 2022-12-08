@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    html {
+      background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    }
+    hr {
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      padding-top: 10px;
+      color: rgb(243, 41, 105);
+      background: #a6a4ad;
+      padding: 15px;
+      max-width: 400px;
+      margin: 0 auto;
+      margin-top: 30px;
+      border-radius: 40px;
+    }
+    h2 {
+      text-align: center;
+      transition: 20ms;
+      text-decoration: underline;
+    }
+    h2:hover {
+      color: crimson;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      border-radius: 20px;
+      max-width: 100%;
+    }
+    p {
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 50px;
+      font-size: 20px;
+      line-height: 40px;
+      font-weight: 700;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      font-size: 30px;
+
+      color: #ffec55;
+      background: #4f4b4c;
+      border-radius: 40px;
+      padding: 15px 20px;
+      font-weight: 900;
+      transition: all 1s ease-in-out;
+      box-shadow: 5px 5px 20px #4f4b4c;
+    }
+    button:hover {
+      color: #4f4b4c;
+      background: #ffec55;
+    }
+  </style>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ice cream</title>
+    <h1>Delicious Ice Cream</h1>
+  </head>
+
+  <body>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/327/original/IMG_20221204_183925_887.jpg?1670166703"
+      alt="ice cream"
+      width="500"
+    />
+
+    <br />
+    <hr />
+    <p>
+      <em>
+        Ice cream is a sweetened frozen food typically eaten as a snack or<br />
+        dessert. It may be made from milk or cream and is flavoured with a<br />
+        sweetener, either sugar or an alternative, and a spice, such as cocoa
+        or<br />
+        vanilla, or with fruit such as strawberries or peaches.
+        <a href="https://restaurantclicks.com/types-of-ice-cream/" class="d">
+          <br /><em>click to see the different ice cream types</em>
+        </a></em
+      >
+    </p>
+    <button><em>Order Now</em></button>
+    <script>
+      function order() {
+        let ordernumber = prompt(
+          "How many ice cream you would like to order ?"
+        );
+        let name = prompt("What your full name?");
+        if (ordernumber > 5) {
+          alert(
+            "Hello" +
+              " " +
+              name +
+              " " +
+              "due to the number of ice cream order you need to pay by credit card."
+          );
+        } else {
+          alert(
+            "Dear " +
+              name +
+              ", The orders are going to be sent for you ,thanks for your shopping ."
+          );
+        }
+      }
+      let orderbutton = document.querySelector("button");
+      orderbutton.addEventListener("click", order);
+    </script>
+    <h2><strong>coded by Atiye.beigirad</strong></h2>
+  </body>
+</html>
